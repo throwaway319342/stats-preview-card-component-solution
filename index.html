@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background-color:hsl(233, 47%, 7%);
+    }
+
+    .content-box-container {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color:hsl(233, 47%, 7%);
+    }
+
+    .content-box-child {
+      align-self: center;
+      height: 400px;
+      width: 1100px;
+    }
+
+    .content-box-layout-container {
+      display: flex;
+      justify-content: space-between;
+      background-color: hsl(244, 38%, 16%);
+      height: 100%;
+      border-radius: 12px;
+    }
+
+    .content-box-layout-child-left {
+      flex: 0 0 50%;
+    }
+
+    .content-box-layout-child-right {
+      flex: 0 0 50%;
+      background-color: hsl(277, 64%, 61%);
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+
+    .content-box-info-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      padding-left: 9%;
+      padding-right: 20%;
+    }
+
+    .content-box-info-child1 {
+      text-align: left;
+      padding-top: 10%;
+      color: white;
+    }
+
+    .content-box-info-child2 {
+      text-align: left;
+      padding-bottom: 8%;
+      line-height: 1.5em;
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    .content-box-info-bottom-left {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      flex-direction: row;
+    }
+
+    .content-box-info-bottom-left-child {
+      padding-right: 17%;
+      color: white;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 0.3em;
+    }
+
+    .stat-heading {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 0.3em;
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="content-box-container">
+    <div class="content-box-child">
+      <div class="content-box-layout-container">
+        <div class="content-box-layout-child-left">
+          <div class="content-box-info-container">
+            <div class="content-box-info-child1">
+              <h1>Get <span style="color:hsl(277, 64%, 61%)">insights</span> that help your business grow.</h1>
+            </div>
+            <div class="content-box-info-child2">
+              <p>Discover the benefits of data analytics and make better decision regarding revenue, customer experience, and overall efficiency</p>
+            </div>
+            <div class="content-box-info-bottom-left">
+              <div class="content-box-info-bottom-left-child">
+                <p>10k+</p>
+                <p class="stat-heading">COMPANIES</p>
+              </div>
+              <div class="content-box-info-bottom-left-child">
+                <p>314</p>
+                <p class="stat-heading">TEMPLATES</p>
+              </div>
+              <div class="content-box-info-bottom-left-child">
+                <p>12M+</p>
+                <p class="stat-heading">QUERIES</p>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div class="content-box-layout-child-right">
+          <img style="opacity: 0.5; border-top-right-radius: 12px; border-bottom-right-radius: 12px;" src="./images/image-header-desktop.jpg" height="400" width="550">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
